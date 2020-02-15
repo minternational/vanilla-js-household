@@ -1,0 +1,26 @@
+{
+  "name": "vanilla-js-household",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minternational/vanilla-js-household.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minternational/vanilla-js-household/issues",
+  "engines": {
+    "node": "12.13.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "1.19.0"
+  }
+  },
+  "homepage": "https://github.com/minternational/vanilla-js-household#readme"
+}
