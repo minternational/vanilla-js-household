@@ -20,7 +20,21 @@ app.get("/", (req, res, next) => {
   res.render('index')
 })
 
-app.post("/", (req, res, next) => {
+// let deleteItemsAndPrice = function() {
+//   haushaltsbuch.artikel = []
+//   haushaltsbuch.preis = []
+// }
+
+// app.post("/", function(req, res) {
+//   console.log("Delete Everything!")
+//   deleteItemsAndPrice();
+// })
+
+app.delete('/', (res, req) => {
+  res.del(req.body.delete)
+})
+
+app.post("/", (req, res) => {
   haushaltsbuch.artikel.push(req.body.artikel)
   haushaltsbuch.preis.push(req.body.preis)
   // if (req.body.delete) {
@@ -39,4 +53,4 @@ app.post("/", (req, res, next) => {
 //   next()
 // })
 
-app.listen(3001)
+app.listen(3000)
